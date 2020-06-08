@@ -35,8 +35,7 @@
     "yarn": ">= 1.17"
   },
   "scripts": {
-    "build": "yarn parcel build src/docsify-footer.js -o docsify-footer.min.js",
-    "prepublish": "yarn build",
+    "build": "parcel build src/docsify-footer.js -o docsify-footer.min.js",
     "release": "yarn install && yarn np"
   },
   "files": [
