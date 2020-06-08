@@ -60,7 +60,7 @@ docker-compose up -d
 To test the changes, you launch your favorite browser and visit [https://localhost:3030](https://localhost:3030).
 
 <p align="center">
-  <img alt="The docsify footer in action" src="https://user-images.githubusercontent.com/958227/83914273-911ccd80-a78e-11ea-8958-90f5164782fd.png" width="768">
+  <img alt="The docsify footer markdown in action" src="https://user-images.githubusercontent.com/958227/84028138-d4a15280-a9ad-11ea-93d1-43ebace761b3.png" width="786">
 </p>
 
 > Default template comes with `npx docsify init docs/` in action.
@@ -75,7 +75,7 @@ To avoid multiple pull requests resolving the same issue, let others know you ar
 
 ### Publishing
 
-At present, the plugin only published to following platforms: `npm` registry, `unpkg` CDN. To get familiar, check out [npm publishing guide]().
+At present, the plugin published via [np](https://github.com/sindresorhus/np) to: `npm` registry, `unpkg` and `jsDelivr` CDN. To get familiar, check out [npm publishing guide](https://zellwk.com/blog/publish-to-npm/).
 
 ### Discussion Etiquette
 
