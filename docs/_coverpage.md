@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="The docsify served in action" src="https://user-images.githubusercontent.com/958227/83913776-9a596a80-a78d-11ea-83ea-b8d953996c21.png" width="480">
+  <img alt="The docsify footer markdown in action" src="https://user-images.githubusercontent.com/958227/84028138-d4a15280-a9ad-11ea-93d1-43ebace761b3.png" width="480">
 </p>
 
 # Docsify Footer
