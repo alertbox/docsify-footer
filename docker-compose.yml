@@ -8,3 +8,4 @@ services:
       - 3030:3000/tcp
     volumes: 
       - ${PWD}/docs:/var/www
+      - ${PWD}/src:/var/www/src
