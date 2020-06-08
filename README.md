@@ -1,6 +1,20 @@
 # Docsify Footer
 
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/alertbox/docsify-footer)
+![dependencies](https://img.shields.io/david/alertbox/docsify-footer)
+![dev dependencies](https://img.shields.io/david/dev/alertbox/docsify-footer)
+![package.json version](https://img.shields.io/github/package-json/v/alertbox/docsify-footer)
+![npm bundle size](https://img.shields.io/bundlephobia/min/@alertbox/docsify-footer)
+[![jsdelivr hits](https://data.jsdelivr.com/v1/package/npm/@alertbox/docsify-footer/badge)](https://www.jsdelivr.com/package/npm/@alertbox/docsify-footer)
+
 A footer markdown plugin for magic documentation site generator, docsify. Find out more at docsify.js.org
+
+<p align="center">
+  <img alt="The docsify footer markdown in action" src="https://user-images.githubusercontent.com/958227/84028138-d4a15280-a9ad-11ea-93d1-43ebace761b3.png" width="1024">
+</p>
+
+> the docsify footer markdown in action.
 
 ## Contents
 
