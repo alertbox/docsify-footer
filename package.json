@@ -1,6 +1,6 @@
 {
   "name": "@alertbox/docsify-footer",
-  "version": "0.0.0",
+  "version": "1.0.0-0",
   "description": "A footer markdown plugin for magic documentation site generator, docsify.",
   "jsdelivr": "dist/docsify-footer.min.js",
   "unpkg": "dist/docsify-footer.min.js",
@@ -55,8 +55,8 @@
     "eslint": "7.2.0",
     "eslint-plugin-import": "2.20.2",
     "esm": "3.2.25",
-    "parcel-bundler": "1.12.4",
-    "np": "6.2.4"
+    "np": "6.2.4",
+    "parcel-bundler": "1.12.4"
   },
   "publishConfig": {
     "access": "public",
