@@ -1,0 +1,59 @@
+{
+  "name": "@alertbox/docsify-footer",
+  "version": "1.0.0",
+  "description": "A footer markdown plugin for magic documentation site generator, docsify.",
+  "jsdelivr": "dist/docsify-footer.min.js",
+  "unpkg": "dist/docsify-footer.min.js",
+  "browser": "dist/docsify-footer.min.js",
+  "main": "src/docsify-footer.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alertbox/docsify-footer"
+  },
+  "keywords": [
+    "documentation",
+    "markdown",
+    "plugin",
+    "docsify",
+    "docsify-plugin",
+    "docsify-footer"
+  ],
+  "author": {
+    "name": "Kosala Nuwan Perera",
+    "url": "https://github.com/kosalanuwan"
+  },
+  "license": "MIT",
+  "bugs": "https://github.com/alertbox/docsify-footer/issues/",
+  "homepage": "https://alertbox.github.io/docsify-footer/",
+  "readme": "README.md",
+  "engines": {
+    "node": ">= 10.15",
+    "yarn": ">= 1.17"
+  },
+  "scripts": {
+    "build": "yarn parcel build src/docsify-footer.js -o docsify-footer.min.js",
+    "prepublish": "yarn build",
+    "publish:pkg": "npx np"
+  },
+  "files": [
+    "dist",
+    "src",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "7.10.1",
+    "@babel/core": "7.10.2",
+    "@babel/preset-env": "7.10.2",
+    "babel-eslint": "10.1.0",
+    "eslint": "7.2.0",
+    "eslint-plugin-import": "2.20.2",
+    "esm": "3.2.25",
+    "parcel-bundler": "1.12.4"
+  },
+  "collective": {
+    "url": "https://opencollective.com/alertbox"
+  }
+}

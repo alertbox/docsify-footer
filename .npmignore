@@ -1,0 +1,9 @@
+.git
+node_modules
+package
+.cache
+.vscode/
+public/
+docs/
+**/*.md
+src

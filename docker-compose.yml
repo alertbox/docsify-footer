@@ -1,0 +1,10 @@
+version: "3.8"
+
+services: 
+
+  whale-docsify-serve:
+    image: alertbox/docsify-served
+    ports: 
+      - 3030:3000/tcp
+    volumes: 
+      - ${PWD}/docs:/var/www

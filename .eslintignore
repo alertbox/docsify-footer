@@ -1,0 +1,8 @@
+.git
+node_modules
+.cache
+dist
+.vscode/
+public/
+docs/
+**/*.md

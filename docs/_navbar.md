@@ -1,0 +1,6 @@
+- [Getting Started](#welcome)
+- [Docsify](https://docsify.js.org)
+- [GitHub](https://github.com/alertbox/docsify-footer)
+- [Alertbox](https://github.com/alertbox/)
+- [Feedback](feedback.md)
+- [License](license.md)
