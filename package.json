@@ -33,7 +33,7 @@
   "scripts": {
     "build": "yarn parcel build src/docsify-footer.js -o docsify-footer.min.js",
     "prepublish": "yarn build",
-    "release": "yarn prepublish && yarn np"
+    "release": "yarn install && yarn np"
   },
   "files": [
     "dist",
@@ -55,7 +55,8 @@
     "np": "6.2.4"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   },
   "collective": {
     "url": "https://opencollective.com/alertbox"
