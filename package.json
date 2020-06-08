@@ -19,9 +19,13 @@
     "docsify-footer"
   ],
   "author": {
-    "name": "Kosala Nuwan Perera",
-    "url": "https://github.com/kosalanuwan"
+    "name": "Alertbox Inc.",
+    "url": "https://github.com/alertbox/",
+    "email": "alertbox.inc@gmail.com"
   },
+  "contributors": [
+    "Kosala Nuwan Perera (https://github.com/kosalanuwan/)"
+  ],
   "license": "MIT",
   "bugs": "https://github.com/alertbox/docsify-footer/issues/",
   "homepage": "https://alertbox.github.io/docsify-footer/",
