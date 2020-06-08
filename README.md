@@ -30,14 +30,14 @@ A footer markdown plugin for magic documentation site generator, docsify. Find o
 
 The docsify footer plugin works with:
 
-- Docsify latest, the magical documentation site generator
-- Markdown, the lightweight and easy-to-use syntax for all forms of writing on GitHub platform
+- [Docsify latest](https://docsify.js.org/#/cdn?id=latest-version), the magical documentation site generator
+- [Markdown](https://guides.github.com/features/mastering-markdown/), the lightweight and easy-to-use syntax for all forms of writing on GitHub platform
 
-There are [binary distribution]() for the plugin and you can also build it from source for experiments as well.
+There are [binary distribution](https://alertbox.github.io/docsify-footer/#/cdn) for the plugin and you can also build it from source for experiments as well.
 
 ## Using the Footer
 
-Check out the [installation instructions]() and [how to get started]().
+Check out the [installation instructions](https://alertbox.github.io/docsify-footer/#/quick-start) and [how to get started](https://alertbox.github.io/docsify-footer/#/add-content).
 
 ## Contributing
 
@@ -64,7 +64,7 @@ If you are interested in fixing issues and contributing directly to the source c
 
 ## Related Projects
 
-Many of the core components and dependencies live in their own repositories on GitHub, for example, the [Docsify](https://github.com/docsifyjs/docsify) and [Docker Images for Node](https://github.com/alertbox/docsify-served) have their own repositories. For a complete list, please have a look at the [Related Projects]() page.
+Many of the core components and dependencies live in their own repositories on GitHub, for example, the [Docsify](https://github.com/docsifyjs/docsify) and [Docker Images for Node](https://github.com/alertbox/docsify-served) have their own repositories. For a complete list, please have a look at the [Related Projects](https://alertbox.github.io/docsify-footer/#/references) page.
 
 ## Code of Conduct
 
