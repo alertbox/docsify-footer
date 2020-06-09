@@ -29,7 +29,7 @@ You'll need following tools:
 
 If you want to understand how the plugin works, or debug an issue, you'll want to get the source, build it, and run it locally.
 
-#### Step 1 Getting the source code
+#### Getting the source code
 
 First fork the repository so that you can make a Pull Request. Then clone your fork locally:
 
@@ -47,14 +47,17 @@ git checkout master
 git pull https://github.com/alertbox/docsify-footer master
 ```
 
-#### Step 2 Build and run from the source
+#### Build and run from the source
 
-First, you want to ensure Docker Desktop is running on your machine. Then pull the `docsify-served` locally.
+First, you want to ensure Docker Desktop is running on your machine. Then pull the `docsify-served` to run locally.
 
 ```bash
 #!/bin/bash
 cd docsify-footer
-docker-compose up -d
+docker run -dp 3030:3000 -v `pwd`/docs:/var/www -v `pwd`/src:/var/www/src alertbox/docsify-served
+
+# Or
+cd docsify-footer && docker-compose up -d
 ```
 
 To test the changes, you launch your favorite browser and visit [https://localhost:3030](https://localhost:3030).
