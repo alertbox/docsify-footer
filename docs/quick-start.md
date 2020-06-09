@@ -11,6 +11,9 @@ First, you will need followings to get started at the most basic level:
 
 For new projects, luckily, we have a starter template ([gh-minimalist](https://github.com/alertbox/gh-minimalist)) you can simply Docsify yourself and forget the rest. But, for the old projects that are already running Docsify or you initialized using `docsify-cli`, you will follow this generic pattern:
 
+- [Adding Plugin](#adding-content) to your Docsify-enabled site
+- [Adding Content](#adding-plugin) to the footer
+
 ## Adding Plugin
 
 First, open up the `index.html` and add the `docsify-footer.min.js` plugin, below the `docsify.min.js` script tag.
