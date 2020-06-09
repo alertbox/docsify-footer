@@ -9,9 +9,7 @@ First, you will need followings to get started at the most basic level:
 - A repository with Docsify enabled
 - An editor, like VS Code
 
-For new projects, luckily, we have a starter template ([gh-minimalist](https://github.com/alertbox/gh-minimalist)) you can simply Docsify yourself and forget the rest.
-
-But, for the old projects that are already running Docsify or you initialized using `docsify-cli`, you will follow this generic pattern:
+For new projects, luckily, we have a starter template ([gh-minimalist](https://github.com/alertbox/gh-minimalist)) you can simply Docsify yourself and forget the rest. But, for the old projects that are already running Docsify or you initialized using `docsify-cli`, you will follow this generic pattern:
 
 ## Adding Plugin
 
@@ -31,9 +29,7 @@ Once you have Footer-enabled the site, you need to create a `_footer.md` file at
 
 !> Sadly, Markdown in `html` is not yet supported. We'd be glad if you could send us a pull request for that.
 
-Luckily, if you are familiar with Markdown, this step should be pretty familiar.
-
-Just write some content in Markdown as you do everywhere else. For example, here's our content in the `_footer.md` markdown file:
+Luckily, if you are familiar with Markdown, this step should be pretty familiar. Just write some content in Markdown as you do everywhere else. For example, here's our content in the `_footer.md` markdown file:
 
 ```markdown
 Maintained by [the Alertbox Team](https://github.com/alertbox/docsify-served/). Proudly published with [docsify](https://docsify.js.io)
