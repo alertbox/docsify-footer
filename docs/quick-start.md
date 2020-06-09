@@ -47,5 +47,3 @@ For the Markdown above, running the plugin will yield:
 </p>
 
 This plugin supports docsify's extended markdown syntax that makes the document more readable. Check out [references](references.md) for all you need to know about Docsify and the plugin related guides.
-
-> Was this guide helpful? Let us know by sending a message to [@alertboxinc](https://twitter.com/alertboxinc).
