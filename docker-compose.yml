@@ -2,7 +2,7 @@ version: "3.8"
 
 services: 
 
-  docsity-footer:
+  docsify-footer:
     image: alertbox/docsify-served
     ports: 
       - 3030:3000/tcp
