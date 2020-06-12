@@ -11,7 +11,7 @@
 Markdown footer plugin for Docsify-enabled GitHub repositories. Find out more at [docsify.js.org](https://docsify.js.org).
 
 <p align="center">
-  <img alt="The docsify-footer Markdown in action" src="https://user-images.githubusercontent.com/958227/84028138-d4a15280-a9ad-11ea-93d1-43ebace761b3.png" width="1024">
+  <img alt="The docsify-footer Markdown in action" src="https://user-images.githubusercontent.com/958227/84507891-23692800-acdf-11ea-9ea7-831e76a883a8.png" width="1024">
 </p>
 
 > The docsify-footer Markdown in action.
