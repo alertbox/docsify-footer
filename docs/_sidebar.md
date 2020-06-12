@@ -5,6 +5,5 @@
 
 - Related
 
-  - [gh-quickstart](https://github.com/alertbox/gh-quickstart)
-  - [docsify-served](https://github.com/alertbod/docsify-served)
-  - [docsifyjs](https://github.com/docsifyjs/docsify)
+  - [GitHub Quickstart](https://alertbox.github.io/gh-quickstart)
+  - [Docsify Served](https://alertbox.github.io/docsify-served)
