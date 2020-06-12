@@ -1,10 +1,6 @@
 ## Welcome
 
-> A footer markdown plugin for magic documentation site generator, docsify. Find out more at [docsify.js.org](https://docsify.js.org).
-
-<p align="center">
-  <img alt="The docsify footer markdown in action" src="https://user-images.githubusercontent.com/958227/84028138-d4a15280-a9ad-11ea-93d1-43ebace761b3.png" width="786">
-</p>
+> Markdown footer plugin for Docsify-enabled GitHub repositories. Find out more at [docsify.js.org](https://docsify.js.org).
 
 ## Features
 
@@ -13,6 +9,7 @@
 ![package.json version](https://img.shields.io/github/package-json/v/alertbox/docsify-footer)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/@alertbox/docsify-footer)
 [![jsdelivr hits](https://data.jsdelivr.com/v1/package/npm/@alertbox/docsify-footer/badge)](https://www.jsdelivr.com/package/npm/@alertbox/docsify-footer)
+![GitHub](https://img.shields.io/github/license/alertbox/docsify-footer)
 
 We (`@alertbox`) use `docsify-footer` for our GitHub Pages and documentation sites of all sort when using docsify.
 
@@ -22,6 +19,14 @@ We (`@alertbox`) use `docsify-footer` for our GitHub Pages and documentation sit
 - Supports Markdown and docisy doc help syntax
 - Maintained by [the Alertbox Team](https://github.com/alertbox/docsify-footer/)
 - Powered by [Docsify](https://docsify.js.org/) and [Docsify Served](https://hub.docker.com/r/alertbox/docsify-served)
+
+## Feedback
+
+- Ask a question on [Stack Overflow]()
+- [Request a new feature](https://github.com/alertbox/docsify-footer/issues/new?assignees=&labels=&template=feature_request.md&title=)
+- Upvote [popular feature requests](https://github.com/alertbox/docsify-footer/issues)
+- [Report an issue](https://github.com/alertbox/docsify-footer/issues/new?assignees=&labels=&template=bug_report.md&title=)
+- Follow [@alertbox](https://twitter.com/alertboxinc) and let us know what you think!
 
 ## Community
 

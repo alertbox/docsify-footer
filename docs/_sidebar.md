@@ -1,15 +1,10 @@
 - Getting Started
 
   - [Quick Start](quick-start.md)
-  - [Best Practices](best-practices.md)
-  - [Troubleshooting](troubleshooting.md)
+  - [CDN](cdn.md)
 
-- [Configure](configure.md)
+- Related
 
-- [CDN](cdn.md)
-
-- [Feedback](feedback.md)
-
-- [References](references.md)
-
-- [License](license.md)
+  - [gh-quickstart](https://github.com/alertbox/gh-quickstart)
+  - [docsify-served](https://github.com/alertbod/docsify-served)
+  - [docsifyjs](https://github.com/docsifyjs/docsify)

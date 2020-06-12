@@ -1,20 +1,16 @@
 # CDN
 
-We use [jsDelivr](https://www.jsdelivr.com/package/npm/@alertbox/docsify-footer), which will reflect the latest version as soon as it is published to npmjs.org.
+> We use [jsDelivr](https://www.jsdelivr.com/package/npm/@alertbox/docsify-footer), which will reflect the latest version as soon as it is published to npmjs.com.
 
-## Latest Version
+At any point that you want to add the plugin:
 
-!> Note recommended for production use. See [best practices](best-practices.md).
-
-[filename](_gist/add-latest.md ':include')
-
-## Specific Version
-
-[filename](_gist/add-specific.md ':include')
+- Avoid using the dev-version for production sites; consider using the minified versions instead
+- Avoid using the latest version for production sites; always specify which version you want to refer
+- Avoid adding the plugin as a dependency via `npm install` or `yarn add`; always use the [CDN](cdn.md) hosted
 
 ## Other CDN
 
-However, you can also find the binaries from:
+You can also find the plugin from:
 
 - [UNPKG](https://unpkg.com/browse/@alertbox/docsify-footer/)
 - [npmjs.com](https://www.npmjs.com/package/@alertbox/docsify-footer)
