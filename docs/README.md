@@ -18,7 +18,7 @@ We (`@alertbox`) use `docsify-footer` for our GitHub Pages and documentation sit
 - Best for GitHub Pages build on docsify
 - Supports Markdown and docisy doc help syntax
 - Maintained by [the Alertbox Team](https://github.com/alertbox/docsify-footer/)
-- Powered by [Docsify](https://docsify.js.org/) and [Docsify Served](https://hub.docker.com/r/alertbox/docsify-served)
+- Powered by [Docsify](https://docsify.js.org/) and [Docsify Served](https://alertbox.github.io/docsify-served)
 
 ## Feedback
 

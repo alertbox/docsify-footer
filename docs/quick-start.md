@@ -9,7 +9,7 @@ First, you will need followings to get started at the most basic level:
 - A repository with Docsify-enabled
 - An editor, like VS Code
 
-For new projects, luckily, we have a starter template ([gh-quickstart](https://github.com/alertbox/gh-quickstart)) you can simply Docsify yourself and forget the rest. But, for the old projects that are already running Docsify or you initialized using `docsify-cli`, you will follow this generic pattern:
+For new projects, luckily, we have a starter template ([gh-quickstart](https://alertbox.github.io/gh-quickstart)) you can simply Docsify yourself and forget the rest. But, for the old projects that are already running Docsify or you initialized using `docsify-cli`, you will follow this generic pattern:
 
 - [Add the plugin](#add-the-plugin) to your Docsify-enabled site
 - [Write content](#write-content) on the footer
@@ -50,7 +50,7 @@ Once you have Footer-enabled the site, you need to create a `_footer.md` file at
 Luckily, if you are familiar with Markdown, this step should be pretty familiar. Just write some content in Markdown as you do everywhere else. [Docsify's Getting Started]() guide is a good source of information to further tweak your site. For example, here's our content in the `_footer.md` markdown file:
 
 ```markdown
-Maintained by [the Alertbox Team](https://github.com/alertbox/docsify-served/). Proudly published with [docsify](https://docsify.js.io)
+Maintained by [the Alertbox Team](https://github.com/alertbox/docsify-footer/). Proudly published with [docsify](https://docsify.js.io)
 ```
 
 Then, spin up your favorite browser to see your content in each Article.
