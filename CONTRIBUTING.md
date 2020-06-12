@@ -49,7 +49,7 @@ git pull https://github.com/alertbox/docsify-footer master
 
 #### Build and run from the source
 
-First, you want to ensure Docker Desktop is running on your machine so that the Docker Image `docsify-served` able to pull from the [Docker Hub repository](https://hub.docker.com/r/alertbox/docsify-served).
+First, you want to ensure Docker Desktop is running on your machine so that the [Docker Image `docsify-served`](https://hub.docker.com/r/alertbox/docsify-served) able to pull from the Docker Hub.
 
 ```bash
 #!/bin/bash
