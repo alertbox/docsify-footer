@@ -1,10 +1,10 @@
 # Contributing
 
-Welcome! And thank you for your interest in contributing to the plugin. We use our wonderful [Contributor Covenant](http://contributor-covenant.org/) for our [Code of Conduct](CODE_OF_CONDUCT.md). Please read that before you join our project.
+> We use our wonderful [Contributor Covenant](http://contributor-covenant.org/) for our [Contributor Code of Conduct](CODE_OF_CONDUCT.md). This same template is used by [over 350,000 open source projects](https://github.com/search?l=Markdown&q=%22Contributor+Covenant%22+fork%3Afalse&type=Code). Please read that before you join our project.
 
-There are many ways in which you can contribute, beyond writing code. Here's a high-level overview of how you can get involved.
+Welcome! And thank you for your interest in contributing to the template. There are many ways in which you can contribute, beyond writing code. Here's a high-level overview of how you can get involved:
 
-- Ask a question on [Stack Overflow]()
+- Ask questions and problems on [Stack Overflow]()
 - [Submit bugs and feature requests](https://github.com/alertbox/docsify-footer/issues), and help us verify as they are checked in
 - Upvote [popular feature requests]()
 - Review [source code changes](https://github.com/alertbox/docsify-footer/pulls)
@@ -16,7 +16,7 @@ If you are interested in writing code to fix issues, here's a high-level overvie
 
 ### Prerequisites
 
-In order to download necessary tools, clone the repo, and install dependencies via `npm` or `yarn`, you need internet access.
+In order to download necessary tools, clone the repo, and install dependencies via `yarn`, you need internet access.
 
 You'll need following tools:
 
@@ -49,7 +49,7 @@ git pull https://github.com/alertbox/docsify-footer master
 
 #### Build and run from the source
 
-First, you want to ensure Docker Desktop is running on your machine. Then pull the `docsify-served` to run locally.
+First, you want to ensure Docker Desktop is running on your machine so that the Docker Image `docsify-served` able to pull from the [Docker Hub repository](https://hub.docker.com/r/alertbox/docsify-served).
 
 ```bash
 #!/bin/bash
@@ -61,12 +61,6 @@ cd docsify-footer && docker-compose up -d
 ```
 
 To test the changes, you launch your favorite browser and visit [https://localhost:3030](https://localhost:3030).
-
-<p align="center">
-  <img alt="The docsify footer markdown in action" src="https://user-images.githubusercontent.com/958227/84028138-d4a15280-a9ad-11ea-93d1-43ebace761b3.png" width="786">
-</p>
-
-> Default template comes with `npx docsify init docs/` in action.
 
 ### Pull Requests
 

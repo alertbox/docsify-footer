@@ -8,7 +8,7 @@
 ![npm bundle size](https://img.shields.io/bundlephobia/min/@alertbox/docsify-footer)
 [![jsdelivr hits](https://data.jsdelivr.com/v1/package/npm/@alertbox/docsify-footer/badge)](https://www.jsdelivr.com/package/npm/@alertbox/docsify-footer)
 
-A footer Markdown plugin for Docsify-enabled GitHub Pages. Find out more at [docsify.js.org](https://docsify.js.org).
+Markdown footer plugin for Docsify-enabled GitHub repositories. Find out more at [docsify.js.org](https://docsify.js.org).
 
 <p align="center">
   <img alt="The docsify-footer Markdown in action" src="https://user-images.githubusercontent.com/958227/84028138-d4a15280-a9ad-11ea-93d1-43ebace761b3.png" width="1024">
