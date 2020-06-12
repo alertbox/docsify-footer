@@ -6,7 +6,7 @@ At any point that you want to add the plugin:
 
 - Avoid using the dev-version for production sites; consider using the minified versions instead
 - Avoid using the latest version for production sites; always specify which version you want to refer
-- Avoid adding the plugin as a dependency via `npm install` or `yarn add`; always use the [CDN](cdn.md) hosted
+- Avoid adding the plugin as a dependency via `npm install` or `yarn add`; always use the CDN hosted
 
 ## Other CDN
 
