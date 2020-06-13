@@ -4,12 +4,12 @@
 
 ## Requirements
 
-First, you will need followings to get started at the most basic level:
+We (`@alertbox`) use [Docsify Footer](https://www.jsdelivr.com/package/npm/@alertbox/docsify-footer) for our GitHub Pages of all sort. First, you will need followings to get started at the most basic level:
 
 - A repository with Docsify-enabled
 - An editor, like VS Code
 
-For new projects, luckily, we have a starter template ([gh-quickstart](https://alertbox.github.io/gh-quickstart)) you can simply Docsify yourself and forget the rest. But, for the old projects that are already running Docsify or you initialized using `docsify-cli`, you will follow this generic pattern:
+For the old projects that are already running Docsify or you initialized using `docsify-cli`, you can simply use [the minified versions available on CDN](cdn.md). You will want to follow this generic pattern:
 
 - [Add the plugin](#add-the-plugin) to your Docsify-enabled site
 - [Write content](#write-content) on the footer

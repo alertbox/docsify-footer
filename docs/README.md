@@ -11,7 +11,7 @@
 [![jsdelivr hits](https://data.jsdelivr.com/v1/package/npm/@alertbox/docsify-footer/badge)](https://www.jsdelivr.com/package/npm/@alertbox/docsify-footer)
 ![GitHub](https://img.shields.io/github/license/alertbox/docsify-footer)
 
-We (`@alertbox`) use `docsify-footer` for our GitHub Pages and documentation sites of all sort when using docsify.
+For new projects, luckily, we have a starter template [GitHub Quickstart](https://alertbox.github.io/gh-quickstart)) as a GitHub Template repositoty so you can simply Docsify yourself. But, for the old projects that are already running Docsify or you initialized using `docsify-cli`, you can simply use [the minified versions available on CDN](cdn.md).
 
 - Built with `docsify`
 - No need to install package locally
