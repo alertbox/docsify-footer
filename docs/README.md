@@ -11,12 +11,13 @@
 [![jsdelivr hits](https://data.jsdelivr.com/v1/package/npm/@alertbox/docsify-footer/badge)](https://www.jsdelivr.com/package/npm/@alertbox/docsify-footer)
 ![GitHub](https://img.shields.io/github/license/alertbox/docsify-footer)
 
-For new projects, luckily, we have a starter template [GitHub Quickstart](https://alertbox.github.io/gh-quickstart)) as a GitHub Template repositoty so you can simply Docsify yourself. But, for the old projects that are already running Docsify or you initialized using `docsify-cli`, you can simply use [the minified versions available on CDN](cdn.md).
+For new projects, luckily, we have a starter template [GitHub Quickstart](https://alertbox.github.io/gh-quickstart) as a GitHub Template repositoty so you can simply Docsify yourself. But, for the old projects that are already running Docsify or you initialized using `docsify-cli`, you can simply use [the minified versions available on CDN](cdn.md).
 
-- Built with `docsify`
+- Built on Docsify
+- Available on popular [CDNs](cdn.md)
 - No need to install package locally
-- Best for GitHub Pages build on docsify
-- Supports Markdown and docisy doc help syntax
+- Best for GitHub Pages build with Docsify
+- Supports Markdown and Docisy Doc Help syntax
 - Maintained by [the Alertbox Team](https://github.com/alertbox/docsify-footer/)
 - Powered by [Docsify](https://docsify.js.org/) and [Docsify Served](https://alertbox.github.io/docsify-served)
 
