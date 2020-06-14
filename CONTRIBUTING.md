@@ -54,7 +54,7 @@ First, you want to ensure Docker Desktop is running on your machine so that the 
 ```bash
 #!/bin/bash
 cd docsify-footer
-docker run -dp 3030:3000 -v `pwd`/docs:/var/www -v `pwd`/src:/var/www/src alertbox/docsify-served
+docker run -dp 3030:3000 -v `pwd`/docs:/var/www -v `pwd`/src:/var/www/src alertbox/docsify-served:4.4.1
 
 # Or
 cd docsify-footer && docker-compose up -d
