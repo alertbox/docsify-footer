@@ -5,5 +5,5 @@
 
 - Related
 
-  - [GitHub Quickstart](https://alertbox.github.io/gh-quickstart)
-  - [Docsify Served](https://alertbox.github.io/docsify-served)
+  - [Try Docsify](https://alertbox.github.io/vscode-remote-try-docsify)
+  - [Devcontainers](https://github.com/kosalanuwan/devcontainers)

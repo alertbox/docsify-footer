@@ -7,7 +7,10 @@
 We (`@alertbox`) use [Docsify Footer](https://www.jsdelivr.com/package/npm/@alertbox/docsify-footer) for our GitHub Pages of all sort. First, you will need followings to get started at the most basic level:
 
 - A repository with Docsify-enabled
-- An editor, like VS Code
+- Git
+- VS Code and Remote - Container extension
+- Docker Desktop, and
+- Markdown editor, like Paper app
 
 For the old projects that are already running Docsify or you initialized using `docsify-cli`, you can simply use [the minified versions available on CDN](cdn.md). You will want to follow this generic pattern:
 
