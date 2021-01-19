@@ -26,7 +26,7 @@ Markdown footer plugin for Docsify-enabled GitHub repositories. Find out more at
 
 ## Requirements
 
-The Dpcsify Footer works with:
+The Docsify Footer works with:
 
 - [Docsify latest](https://docsify.js.org/#/cdn?id=latest-version), the magical documentation site generator
 - [Markdown](https://guides.github.com/features/mastering-markdown/), the lightweight and easy-to-use syntax for all forms of writing on GitHub platform
@@ -47,6 +47,6 @@ There are many ways in which you can participate in the project. Please see the 
 
 ## License
 
-Copyright (c) Alertbox Inc. All rights reserved.
+Copyright &copy; Alertbox Inc. All rights reserved.
 
 The source code is license under the [MIT License](LICENSE).

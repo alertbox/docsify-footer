@@ -12,6 +12,8 @@ Welcome! And thank you for your interest in contributing to the template. There 
 
 ## Contributing to Source Code
 
+> The official repo  to contribute would be [@docsifyjs/docsify](https://github.com/docsifyjs/docsify/#readme).
+
 If you are interested in writing code to fix issues, here's a high-level overview of how you can clone the repos and get started.
 
 ### Prerequisites
@@ -21,9 +23,8 @@ In order to download necessary tools, clone the repo, and install dependencies v
 You'll need following tools:
 
 - Git
-- VS Code
+- VS Code and Recommended Extensions
 - Docker Desktop
-- Docker Extension for VS Code
 
 ### Build and Run
 
@@ -35,30 +36,17 @@ First fork the repository so that you can make a Pull Request. Then clone your f
 
 ```bash
 #!/bin/bash
-git clone https://github.com/<your-github-account>/docsify-footer
-```
-
-Occasionally you would want to merge changes the upstream repository (the official code repo) with your fork.
-
-```bash
-#!/bin/bash
-cd docsify-footer
-git checkout master
-git pull https://github.com/alertbox/docsify-footer master
+gh repo clone docsify-footer
+code docsify-footer/
 ```
 
 #### Build and run from the source
 
-First, you want to ensure Docker Desktop is running on your machine so that the [Docker Image `docsify-served`](https://hub.docker.com/r/alertbox/docsify-served) able to pull from the Docker Hub.
+First, you want to ensure Docker Desktop is running on your machine so that the development container be able to install the minimal required set up.
 
-```bash
-#!/bin/bash
-cd docsify-footer
-docker run -dp 3030:3000 -v `pwd`/docs:/var/www -v `pwd`/src:/var/www/src alertbox/docsify-served:4.4.1
-
-# Or
-cd docsify-footer && docker-compose up -d
-```
+With VS Code:
+- Run task: `Reopen in Container`
+- Press `F5` to preview locally
 
 To test the changes, you launch your favorite browser and visit [https://localhost:3030](https://localhost:3030).
 
