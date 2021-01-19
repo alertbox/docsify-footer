@@ -1,5 +1,5 @@
 {
-    "name": "try-docsify",
+    "name": "docsify-footer",
     "dockerComposeFile": "docker-compose.yml",
     "service": "app",
     "workspaceFolder": "/workspace",
