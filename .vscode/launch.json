@@ -6,7 +6,7 @@
     "configurations": [
         
         {
-            "command": "docsify serve docs/ -p 3030",
+            "command": "docsify serve docs/ -P 35729",
             "name": "RUN docsify serve",
             "request": "launch",
             "type": "node-terminal"
