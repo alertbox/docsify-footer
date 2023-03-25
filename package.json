@@ -24,7 +24,7 @@
     "email": "alertbox.inc@gmail.com"
   },
   "contributors": [
-    "Kosala Nuwan Perera (https://github.com/kosalanuwan/)"
+    "Kosala Nuwan Perera (https://kosalanuwan.github.io)"
   ],
   "license": "MIT",
   "bugs": "https://github.com/alertbox/docsify-footer/issues/",
@@ -54,8 +54,8 @@
     "eslint": "7.2.0",
     "eslint-plugin-import": "2.20.2",
     "esm": "3.2.25",
-    "np": "6.2.4",
-    "parcel-bundler": "1.12.4"
+    "np": "7.6.4",
+    "parcel-bundler": "1.12.5"
   },
   "publishConfig": {
     "access": "public",

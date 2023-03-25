@@ -27,7 +27,7 @@
                     vm._lifecycle.afterEach(article => article + html);
                 });
         });
-    }
+    };
 
     $docsify.plugins = [].concat(install, $docsify.plugins);
 
