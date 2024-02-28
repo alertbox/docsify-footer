@@ -6,6 +6,7 @@
   "unpkg": "dist/docsify-footer.min.js",
   "browser": "dist/docsify-footer.min.js",
   "main": "src/docsify-footer.js",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alertbox/docsify-footer"
@@ -19,24 +20,23 @@
     "docsify-footer"
   ],
   "author": {
-    "name": "Alertbox Inc.",
+    "name": "The Alertbox, Inc.",
     "url": "https://github.com/alertbox/",
     "email": "alertbox.inc@gmail.com"
   },
   "contributors": [
-    "Kosala Nuwan Perera (https://kosalanuwan.github.io)"
+    "Kosala (Nuwan) Perera (https://kosperera.github.io)"
   ],
   "license": "MIT",
   "bugs": "https://github.com/alertbox/docsify-footer/issues/",
   "homepage": "https://alertbox.github.io/docsify-footer/",
   "readme": "README.md",
-  "engines": {
-    "node": ">= 10.15",
-    "yarn": ">= 1.17"
-  },
   "scripts": {
-    "build": "parcel build src/docsify-footer.js -o docsify-footer.min.js",
-    "release": "yarn install && yarn np"
+    "clean": "rm -rf dist/",
+    "build": "bun build --minify --no-bundle --outfile ./dist/docsify-footer.min.js ./src/docsify-footer.js",
+    "release": "bun install && bun --bun np",
+    "lint": "eslint ./src --cache",
+    "lint:fix": "bun --bun lint --fix"
   },
   "files": [
     "dist",
@@ -47,15 +47,11 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "@babel/cli": "7.10.1",
-    "@babel/core": "7.10.2",
-    "@babel/preset-env": "7.10.2",
-    "babel-eslint": "10.1.0",
-    "eslint": "7.2.0",
-    "eslint-plugin-import": "2.20.2",
-    "esm": "3.2.25",
-    "np": "7.6.4",
-    "parcel-bundler": "1.12.5"
+    "@eslint/js": "8.57.0",
+    "@types/bun": "latest",
+    "eslint": "8.57.0",
+    "eslint-plugin-jsdoc": "48.2.0",
+    "np": "7.6.4"
   },
   "publishConfig": {
     "access": "public",

@@ -18,7 +18,7 @@ If you are interested in writing code to fix issues, here's a high-level overvie
 
 ### Prerequisites
 
-In order to download necessary tools, clone the repo, and install dependencies via `yarn`, you need internet access.
+In order to download necessary tools, clone the repo, and install dependencies via `bun`, you need internet access.
 
 You'll need following tools:
 

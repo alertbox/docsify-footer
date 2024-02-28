@@ -1,10 +1,8 @@
 # Docsify Footer
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/alertbox/docsify-footer)
 ![dependencies](https://img.shields.io/david/alertbox/docsify-footer)
 ![dev dependencies](https://img.shields.io/david/dev/alertbox/docsify-footer)
-![package.json version](https://img.shields.io/github/package-json/v/alertbox/docsify-footer)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/@alertbox/docsify-footer)
 [![jsdelivr hits](https://data.jsdelivr.com/v1/package/npm/@alertbox/docsify-footer/badge)](https://www.jsdelivr.com/package/npm/@alertbox/docsify-footer)
 
@@ -47,6 +45,6 @@ There are many ways in which you can participate in the project. Please see the 
 
 ## License
 
-Copyright &copy; Alertbox Inc. All rights reserved.
+Copyright &copy; The Alertbox, Inc. (@alertbox) All rights reserved.
 
 The source code is license under the [MIT License](LICENSE).
