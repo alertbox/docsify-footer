@@ -6,3 +6,7 @@ telemetry = true
 auto = "auto"
 dryRun = false
 exact = true
+
+[install.lockfile]
+# whether to save the lockfile to disk
+save = false

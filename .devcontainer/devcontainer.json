@@ -86,7 +86,7 @@
   },
   // Use 'updateContentCommand' to run commands after the container is successfully created.
   "updateContentCommand": {
-    "clean": "rm -rf node_modules/ dist/"
+    "clean": "bun run clean"
   },
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": {
