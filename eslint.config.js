@@ -1,13 +1,15 @@
-import js from '@eslint/js';
-import jsdoc from 'eslint-plugin-jsdoc';
-import prettier from 'eslint-plugin-prettier/recommended';
+import js from '@eslint/js'
+import stylistic from '@stylistic/eslint-plugin'
+import prettier from 'eslint-config-prettier'
+import jsdoc from 'eslint-plugin-jsdoc'
 
 export default [
-  js.configs.recommended,
   jsdoc.configs['flat/recommended'],
+  js.configs.recommended,
   prettier,
+  stylistic.configs['recommended-flat'],
   {
-    plugins: { jsdoc },
     rules: {},
+    plugins: { jsdoc },
   },
-];
+]

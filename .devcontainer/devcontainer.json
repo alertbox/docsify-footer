@@ -5,7 +5,7 @@
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [
     // Http
-    3000
+    4321
   ],
   // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
   "remoteUser": "root",
@@ -30,11 +30,11 @@
       "extensions": [
         // JavaScript
         "oven.bun-vscode",
+        "esbenp.prettier-vscode",
         // TypeScript
         "bierner.lit-html",
         "better-ts-errors.better-ts-errors",
         "dbaeumer.vscode-eslint",
-        // "mgmcdermott.vscode-language-babel",
         // Makefile
         "ms-vscode.makefile-tools",
         // Markdown
@@ -50,35 +50,46 @@
         // Other
         "albert.tabout",
         "bierner.comment-tagged-templates",
-        "ritwickdey.liveserver"
       ],
       // Set *default* container specific settings.json values on container create.
       "settings": {
         // Editor
         "editor.guides.bracketPairs": "active",
+        "debug.internalConsoleOptions": "neverOpen",
+        // Better linting & formatting
         "editor.formatOnPaste": true,
-        "editor.formatOnSave": true,
+        "editor.formatOnSave": false,
         "editor.formatOnSaveMode": "file",
-        "editor.codeActionsOnSave": {
-          "source.organizeImports": true,
-          "source.fixAll": "explicit"
-        },
-        // Configure linting
+        "prettier.enable": true,
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.codeActionsOnSave": [
+          "source.organizeImports",
+          "source.fixAll.eslint"
+        ],
+        "eslint.enable": true,
+        "eslint.format.enable": true,
         "eslint.experimental.useFlatConfig": true,
         "eslint.alwaysShowStatus": true,
         "eslint.lintTask.enable": true,
-        // Event better source control.
-        "scm.defaultViewMode": "tree",
-        "diffEditor.diffAlgorithm": "advanced",
-        "diffEditor.experimental.showMoves": true,
-        "diffEditor.renderSideBySide": false,
-        "files.watcherExclude": {
-          "**/node_modules/**": true,
-          "dist": true
+        // JSON
+        "json.format.enable": true,
+        "[json]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
         },
-        //
+        "[jsonc]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        // YAML
+        "yaml.format.enable": true,
+        "[yaml]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        // TOML
+        "[toml]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        // Terminal
         "terminal.integrated.defaultProfile.linux": "zsh",
-        "debug.internalConsoleOptions": "neverOpen",
         // Prettifies the response with emojis and such.
         "betterTypeScriptErrors.prettify": true
       }

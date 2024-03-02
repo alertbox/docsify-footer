@@ -5,7 +5,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "command": "docsify serve docs/ -P 35729",
+      "command": "bun --bun start",
       "name": "RUN docsify serve",
       "request": "launch",
       "type": "node-terminal"

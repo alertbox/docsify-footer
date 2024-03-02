@@ -32,11 +32,12 @@
   "homepage": "https://alertbox.github.io/docsify-footer/",
   "readme": "README.md",
   "scripts": {
-    "clean": "rm -rf node_modules/ dist/",
+    "clean": "rm -rf node_modules/ dist/ .eslintcache",
     "build": "bun build --minify --no-bundle --outfile ./dist/docsify-footer.min.js ./src/docsify-footer.js",
-    "release": "bun install && bun --bun np",
+    "release": "bun install && bun --bun run np",
     "lint": "eslint ./src --cache",
-    "lint:fix": "bun --bun lint --fix"
+    "lint:fix": "eslint ./src --cache --fix",
+    "start": "docsify serve docs/ -p 4321"
   },
   "files": [
     "dist",
@@ -48,12 +49,13 @@
   "dependencies": {},
   "devDependencies": {
     "@eslint/js": "8.57.0",
-    "@types/bun": "latest",
+    "@stylistic/eslint-plugin": "1.6.3",
+    "@types/bun": "1.0.8",
+    "docsify-cli": "4.4.4",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-jsdoc": "48.2.0",
-    "eslint-plugin-prettier": "5.1.3",
-    "np": "7.6.4",
+    "np": "10.0.0",
     "prettier": "3.2.5"
   },
   "publishConfig": {
