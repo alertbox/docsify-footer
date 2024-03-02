@@ -1,0 +1,12 @@
+# Bun is awesome: https://bun.sh/docs/runtime/bunfig
+
+telemetry = true
+
+[install]
+auto = "auto"
+dryRun = false
+exact = true
+
+[install.lockfile]
+# whether to save the lockfile to disk
+save = false

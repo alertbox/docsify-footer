@@ -1,7 +1,7 @@
 {
-    "cSpell.words": [
-        "alertbox",
-        "Docsify",
-        "jsdelivr"
-    ]
+  // Source control
+  "scm.defaultViewMode": "tree",
+  "diffEditor.diffAlgorithm": "advanced",
+  "diffEditor.experimental.showMoves": true,
+  "diffEditor.renderSideBySide": false,
 }

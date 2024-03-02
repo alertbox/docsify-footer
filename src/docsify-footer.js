@@ -1,34 +1,32 @@
-;
+// eslint-disable-next-line no-shadow-restricted-names, no-unused-vars
 (function (Docsify, $docsify, undefined) {
-    const DEFAULT_FOOTER = '_footer';
+  const DEFAULT_FOOTER = '_footer'
 
-    const install = function (hook, vm) {
+  const install = function (hook, vm) {
+    const { loadFooter, ext, requestHeaders } = vm.config
+    // let's fail faster!
+    if (!loadFooter) {
+      return
+    }
 
-        const { loadFooter, ext, requestHeaders } = vm.config;
-    
-        // let's fail fast!
-        if (!loadFooter) { return; }
-    
-        const file = loadFooter === true ? DEFAULT_FOOTER + ext : loadFooter;
+    const file = loadFooter === true ? DEFAULT_FOOTER + ext : loadFooter
 
-        hook.mounted(_ => {
-            const path = vm.router.getFile(file);
-            const articleNode = Docsify.dom.getNode('article');
+    hook.mounted(() => {
+      const path = vm.router.getFile(file)
+      const articleNode = Docsify.dom.getNode('article')
 
-            Docsify
-                .get(path, false, requestHeaders)
-                .then(content => {
+      Docsify.get(path, false, requestHeaders).then((content) => {
+        const html = vm.compiler.compile(content)
+        const el = Docsify.dom.create('footer', html)
 
-                    const html = vm.compiler.compile(content);
-                    const el = Docsify.dom.create('footer', html);
+        Docsify.dom.appendTo(articleNode, el)
 
-                    Docsify.dom.appendTo(articleNode, el);
+        vm._lifecycle.afterEach(article => article + html)
+      })
+    })
+  }
 
-                    vm._lifecycle.afterEach(article => article + html);
-                });
-        });
-    };
+  $docsify.plugins = [].concat(install, $docsify.plugins || [])
 
-    $docsify.plugins = [].concat(install, $docsify.plugins);
-
-})(Docsify, $docsify);
+  // eslint-disable-next-line no-undef
+})(Docsify, $docsify || {})

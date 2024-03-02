@@ -11,7 +11,7 @@
 [![jsdelivr hits](https://data.jsdelivr.com/v1/package/npm/@alertbox/docsify-footer/badge)](https://www.jsdelivr.com/package/npm/@alertbox/docsify-footer)
 ![GitHub](https://img.shields.io/github/license/alertbox/docsify-footer)
 
-For new projects, luckily, we have a starter template [Quickstart](https://alertbox.github.io/vscode-remote-try-docsify) as a template repositoty so you can simply Docsify yourself. But, for the old projects that are already running Docsify or you initialized using `docsify-cli`, you can simply use [the minified versions available on CDN](cdn.md).
+For new projects, luckily, we have a starter template [Quickstart](https://alertbox.github.io/try-docsify) as a template repositoty so you can simply Docsify yourself. But, for the old projects that are already running Docsify or you initialized using `docsify-cli`, you can simply use [the minified versions available on CDN](cdn.md).
 
 - Built on Docsify
 - Available on popular [CDNs](cdn.md)
@@ -19,7 +19,7 @@ For new projects, luckily, we have a starter template [Quickstart](https://alert
 - Best for GitHub Pages build with Docsify
 - Supports Markdown and Docisy Doc Help syntax
 - Maintained by [the Alertbox Team](https://github.com/alertbox/docsify-footer/)
-- Powered by [Docsify](https://docsify.js.org/) and [VS  Code Remote - Container](https://alertbox.github.io/vscode-remote-try-docsify/#readme)
+- Powered by [Docsify](https://docsify.js.org/) and [VS  Code Remote - Container](https://alertbox.github.io/try-docsify/#readme)
 
 ## Feedback
 

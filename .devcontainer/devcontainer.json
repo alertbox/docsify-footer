@@ -1,74 +1,106 @@
 {
-	"name": "docsify-footer",
-	// See complete list https://hub.docker.com/_/node/tags?page=1&name=bullseye
-    "image": "node:lts-bullseye",
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [
-        // Localhost
-        3000,
-        // Live reload
-        35729
-    ],
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	"remoteUser": "root",
-
-    // Add more features. See complete list https://github.com/devcontainers/features
-	"features": {
-		// Permission denied. More info: https://github.com/devcontainers/features/issues/440
-		"ghcr.io/devcontainers/features/common-utils:2": {
-			"configureZshAsDefaultShell": true
-		},
-		"ghcr.io/devcontainers/features/github-cli:1": {}
-	},
-    "containerEnv": {},
-    // Configure tool-specific properties.
-	"customizations": {
-		// Configure properties specific to VS Code.
-		"vscode": {
-			// Add the IDs of extensions you want installed when the container is created.
-			"extensions": [
-                "ms-azuretools.vscode-docker",
-                "ms-vscode-remote.remote-containers",
-                "redhat.vscode-yaml",
-                
-                "visualstudioexptteam.vscodeintellicode",
-                "dbaeumer.vscode-eslint",
-                "usernamehw.errorlens",
-                "christian-kohler.npm-intellisense",
-                "eg2.vscode-npm-script",
-                
-                "ritwickdey.live-sass",
-                
-                "editorconfig.editorconfig",
-                "esbenp.prettier-vscode",
-                
-                "bierner.github-markdown-preview",
-                "streetsidesoftware.code-spell-checker",
-                "znck.grammarly",
-
-                "redhat.fabric8-analytics",
-                "ms-vscode.wordcount"              
-			],
-			// Set *default* container specific settings.json values on container create.
-			"settings": {
-				"terminal.integrated.defaultProfile.linux": "zsh",
-
-				"editor.formatOnPaste": true,
-				"editor.guides.bracketPairs": "active",
-				"debug.internalConsoleOptions": "neverOpen",
-
-                "scm.defaultViewMode": "tree",
-
-				"files.watcherExclude": {
-					"**/node_modules/**": true
-				}
-            }
-		}
-	},
-
-	// Use 'updateContentCommand' to run commands after the container is successfully created.
-	"updateContentCommand": "yarn global add docsify-cli@latest --prefix /usr/local",
-	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "yarn install"
+  "name": "docsify-footer",
+  // See complete list https://hub.docker.com/r/oven/bun
+  "image": "oven/bun",
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [
+    // Http
+    4321
+  ],
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  "remoteUser": "root",
+  // Add more features. See complete list https://github.com/devcontainers/features
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "configureZshAsDefaultShell": true
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+      "moby": false,
+      "dockerDashComposeVersion": "v2"
+    }
+  },
+  "containerEnv": {},
+  "remoteEnv": {},
+  // Configure tool-specific properties.
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        // JavaScript
+        "oven.bun-vscode",
+        "esbenp.prettier-vscode",
+        // TypeScript
+        "bierner.lit-html",
+        "better-ts-errors.better-ts-errors",
+        "dbaeumer.vscode-eslint",
+        // Makefile
+        "ms-vscode.makefile-tools",
+        // Markdown
+        "bierner.markdown-preview-github-styles",
+        "bierner.markdown-emoji",
+        "bierner.markdown-checkbox",
+        "bierner.jsdoc-markdown-highlighting",
+        "ms-vscode.wordcount",
+        // TOML, YAML, et al.
+        "tamasfe.even-better-toml",
+        "redhat.vscode-yaml",
+        "editorconfig.editorconfig",
+        // Other
+        "albert.tabout",
+        "bierner.comment-tagged-templates",
+      ],
+      // Set *default* container specific settings.json values on container create.
+      "settings": {
+        // Editor
+        "editor.guides.bracketPairs": "active",
+        "debug.internalConsoleOptions": "neverOpen",
+        // Better linting & formatting
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": false,
+        "editor.formatOnSaveMode": "file",
+        "prettier.enable": true,
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.codeActionsOnSave": [
+          "source.organizeImports",
+          "source.fixAll.eslint"
+        ],
+        "eslint.enable": true,
+        "eslint.format.enable": true,
+        "eslint.experimental.useFlatConfig": true,
+        "eslint.alwaysShowStatus": true,
+        "eslint.lintTask.enable": true,
+        // JSON
+        "json.format.enable": true,
+        "[json]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[jsonc]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        // YAML
+        "yaml.format.enable": true,
+        "[yaml]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        // TOML
+        "[toml]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        // Terminal
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        // Prettifies the response with emojis and such.
+        "betterTypeScriptErrors.prettify": true
+      }
+    }
+  },
+  // Use 'updateContentCommand' to run commands after the container is successfully created.
+  "updateContentCommand": {
+    "clean": "bun run clean"
+  },
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": {
+    "restore": "bun install"
+  }
 }

@@ -5,5 +5,5 @@
 
 - Related
 
-  - [Try Docsify](https://alertbox.github.io/vscode-remote-try-docsify)
-  - [Devcontainers](https://github.com/kosalanuwan/devcontainers)
+  - [Try Docsify](https://alertbox.github.io/try-docsify/)
+  - [Devcontainers](https://github.com/devcontainers/)
