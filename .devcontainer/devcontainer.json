@@ -1,5 +1,5 @@
 {
-  "name": "Bun",
+  "name": "docsify-footer",
   // See complete list https://hub.docker.com/r/oven/bun
   "image": "oven/bun",
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
