@@ -1,5 +1,5 @@
-// eslint-disable-next-line no-shadow-restricted-names, no-unused-vars
-(function (Docsify, $docsify, undefined) {
+// deno-lint-ignore no-shadow-restricted-names no-unused-vars
+;(function (Docsify, $docsify, undefined) {
   const DEFAULT_FOOTER = '_footer'
 
   const install = function (hook, vm) {
@@ -21,12 +21,10 @@
 
         Docsify.dom.appendTo(articleNode, el)
 
-        vm._lifecycle.afterEach(article => article + html)
+        vm._lifecycle.afterEach((article) => article + html)
       })
     })
   }
 
   $docsify.plugins = [].concat(install, $docsify.plugins || [])
-
-  // eslint-disable-next-line no-undef
 })(Docsify, $docsify || {})

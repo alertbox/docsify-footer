@@ -1,0 +1,18 @@
+{
+  "fmt": {
+    "include": ["src/", "doc/", ".vscode/"],
+    "indentWidth": 2,
+    "useTabs": false,
+    "proseWrap": "preserve",
+    "semiColons": false,
+    "singleQuote": true
+  },
+  "lint": {
+    "include": ["src/"],
+    "rules": {
+      "tags": ["recommended"],
+      "exclude": ["no-unused-vars"],
+      "include": ["ban-untagged-todo"]
+    }
+  }
+}

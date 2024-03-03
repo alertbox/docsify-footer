@@ -20,7 +20,9 @@
       "dockerDashComposeVersion": "v2"
     }
   },
-  "containerEnv": {},
+  "containerEnv": {
+    "DENO_INSTALL": "/usr/local"
+  },
   "remoteEnv": {},
   // Configure tool-specific properties.
   "customizations": {
@@ -30,11 +32,10 @@
       "extensions": [
         // JavaScript
         "oven.bun-vscode",
-        "esbenp.prettier-vscode",
         // TypeScript
+        "denoland.vscode-deno",
         "bierner.lit-html",
         "better-ts-errors.better-ts-errors",
-        "dbaeumer.vscode-eslint",
         // Makefile
         "ms-vscode.makefile-tools",
         // Markdown
@@ -49,7 +50,7 @@
         "editorconfig.editorconfig",
         // Other
         "albert.tabout",
-        "bierner.comment-tagged-templates",
+        "bierner.comment-tagged-templates"
       ],
       // Set *default* container specific settings.json values on container create.
       "settings": {
@@ -57,37 +58,15 @@
         "editor.guides.bracketPairs": "active",
         "debug.internalConsoleOptions": "neverOpen",
         // Better linting & formatting
+        "deno.enable": true,
+        "editor.defaultFormatter": "denoland.vscode-deno",
         "editor.formatOnPaste": true,
-        "editor.formatOnSave": false,
+        "editor.formatOnSave": true,
         "editor.formatOnSaveMode": "file",
-        "prettier.enable": true,
-        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
         "editor.codeActionsOnSave": [
           "source.organizeImports",
-          "source.fixAll.eslint"
+          "source.fixAll"
         ],
-        "eslint.enable": true,
-        "eslint.format.enable": true,
-        "eslint.experimental.useFlatConfig": true,
-        "eslint.alwaysShowStatus": true,
-        "eslint.lintTask.enable": true,
-        // JSON
-        "json.format.enable": true,
-        "[json]": {
-          "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
-        "[jsonc]": {
-          "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
-        // YAML
-        "yaml.format.enable": true,
-        "[yaml]": {
-          "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
-        // TOML
-        "[toml]": {
-          "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
         // Terminal
         "terminal.integrated.defaultProfile.linux": "zsh",
         // Prettifies the response with emojis and such.
@@ -97,10 +76,11 @@
   },
   // Use 'updateContentCommand' to run commands after the container is successfully created.
   "updateContentCommand": {
-    "clean": "bun run clean"
+    "docsify": "bun install --global docsify-cli",
+    "deno": "curl -fsSL https://deno.land/install.sh | sh"
   },
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": {
-    "restore": "bun install"
+    "restore": "bun run clean && bun install"
   }
 }
