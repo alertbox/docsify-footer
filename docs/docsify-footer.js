@@ -1,1 +1,0 @@
-../src/docsify-footer.js

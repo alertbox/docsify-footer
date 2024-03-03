@@ -36,6 +36,17 @@ With VS Code:
 - Run task: `Reopen in Container`
 - Press `F5` to preview locally
 
+To refer these two fake files pointing to the originals, you comment out the `<script>` pointing to the CDN in the [docs/index.html](./docs/index.html).
+
+With Terminal:
+- Run `bun build:clean` to build from source
+- Create a couple of symlinks
+  ```sh
+  cd docs && \
+     ln -s ../src/docsify-footer.js docsify-footer.js && \
+     ln -s ../dist/docsify-footer.min.js docsify-footer.min.js
+  ```
+
 To test the changes, you launch your favorite browser and visit [https://localhost:4321](https://localhost:4321).
 
 ### Pull Requests

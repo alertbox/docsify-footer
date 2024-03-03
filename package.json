@@ -34,6 +34,7 @@
   "scripts": {
     "clean": "rm -rf node_modules/ dist/",
     "build": "bun build --minify --no-bundle --outfile ./dist/docsify-footer.min.js ./src/docsify-footer.js",
+    "build:clean": "bun clean && bun run build",
     "release": "bun install && bun --bun run np",
     "lint": "deno lint",
     "start": "docsify serve docs/ -p 4321"
