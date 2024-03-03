@@ -1,6 +1,8 @@
 #
 # Project Specific Ignores
-#
+# 
+docs/docsify-footer.js
+docs/docsify-footer.min.js
 
 # Docsify Served Volume Mapping
 docs/src
