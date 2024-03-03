@@ -1,9 +1,7 @@
 # Docsify Footer
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
-![dependencies](https://img.shields.io/david/alertbox/docsify-footer)
-![dev dependencies](https://img.shields.io/david/dev/alertbox/docsify-footer)
-![npm bundle size](https://img.shields.io/bundlephobia/min/@alertbox/docsify-footer)
+![NPM bundle size](https://img.shields.io/bundlephobia/min/@alertbox/docsify-footer)
 [![jsdelivr hits](https://data.jsdelivr.com/v1/package/npm/@alertbox/docsify-footer/badge)](https://www.jsdelivr.com/package/npm/@alertbox/docsify-footer)
 
 Markdown footer plugin for Docsify-enabled GitHub repositories. Find out more at [docsify.js.org](https://docsify.js.org).
