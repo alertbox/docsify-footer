@@ -1,4 +1,9 @@
+// Deno is awesome.
+// https://docs.deno.com/runtime/manual/getting_started/configuration_file
+
 {
+  // Deno: Formatting rules.
+  // https://docs.deno.com/runtime/manual/tools/formatter
   "fmt": {
     "include": ["src/", "doc/", ".vscode/"],
     "indentWidth": 2,
@@ -7,6 +12,8 @@
     "semiColons": false,
     "singleQuote": true
   },
+  // Deno: Linting rules.
+  // https://docs.deno.com/runtime/manual/tools/linter
   "lint": {
     "include": ["src/"],
     "rules": {

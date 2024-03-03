@@ -28,27 +28,15 @@ You'll need following tools:
 
 ### Build and Run
 
-If you want to understand how the plugin works, or debug an issue, you'll want to get the source, build it, and run it locally.
+[![Open in Dev Container](https://img.shields.io/static/v1?style=for-the-badge&label=Dev+Container&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/alertbox/docsify-footer)
 
-#### Getting the source code
-
-First fork the repository so that you can make a Pull Request. Then clone your fork locally:
-
-```bash
-#!/bin/bash
-gh repo clone docsify-footer
-code docsify-footer/
-```
-
-#### Build and run from the source
-
-First, you want to ensure Docker Desktop is running on your machine so that the development container be able to install the minimal required set up.
+You can also run this repo locally by following these repetitive steps. First, you want to ensure Docker Desktop (or Rancher Desktop) is running and the repo is cloned to your local machine.
 
 With VS Code:
 - Run task: `Reopen in Container`
 - Press `F5` to preview locally
 
-To test the changes, you launch your favorite browser and visit [https://localhost:3030](https://localhost:3030).
+To test the changes, you launch your favorite browser and visit [https://localhost:4321](https://localhost:4321).
 
 ### Pull Requests
 
