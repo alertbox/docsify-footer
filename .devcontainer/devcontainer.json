@@ -44,10 +44,6 @@
         "bierner.markdown-checkbox",
         "bierner.jsdoc-markdown-highlighting",
         "ms-vscode.wordcount",
-        // TOML, YAML, et al.
-        "tamasfe.even-better-toml",
-        "redhat.vscode-yaml",
-        "editorconfig.editorconfig",
         // Other
         "albert.tabout",
         "bierner.comment-tagged-templates"
@@ -76,8 +72,8 @@
   },
   // Use 'updateContentCommand' to run commands after the container is successfully created.
   "updateContentCommand": {
-    "docsify": "bun install --global docsify-cli",
-    "deno": "curl -fsSL https://deno.land/install.sh | sh"
+    "install_docsify": "bun install --global docsify-cli",
+    "install_deno": "curl -fsSL https://deno.land/install.sh | sh"
   },
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": {
