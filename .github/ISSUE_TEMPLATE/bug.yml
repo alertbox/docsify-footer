@@ -1,0 +1,71 @@
+name: Bug
+description: Create a report to help us improve
+labels: ["bug", "triage"]
+assignees:
+  - kosperera
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Tell us, what happen and what you see?
+      placeholder: |
+        Steps to reproduce the behavior:
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: what-expected
+    attributes:
+      label: What did you expected?
+      description: Tell us, what did you expect to happen?
+      placeholder: |
+        Give us a clear and concise description of what you expected to happen.
+  - type: dropdown
+    id: where-happened
+    attributes:
+      label: What devices are you seeing the problem on?
+      multiple: true
+      options:
+        - Large Desktop
+        - Laptop
+        - Tablet
+        - Smartphone
+    validations:
+      required: true
+  - type: textarea
+    id: what-version
+    attributes:
+      label: Additional context
+      description: Provide us a bit more info about the devices?
+      placeholder: |
+        - Device: [e.g. iPhone6, Samsung Galaxy]
+        - OS: [e.g. iOS 16.2.3298]
+        - Browser [e.g. chrome, safari]
+        - Version [e.g. 22]
+    validations:
+      required: true
+  - type: textarea
+    id: how-happened
+    attributes:
+      label: How it happened?
+      description: Tell us, any additional context about the problem here.
+      placeholder: |
+        Add any other context about the problem here.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
