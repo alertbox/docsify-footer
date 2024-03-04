@@ -1,0 +1,43 @@
+name: Feature request
+description: Suggest an idea for this project
+labels: ["bug", "triage"]
+assignees:
+  - kosperera
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What?
+      description: Is your feature request related to a problem? Please describe.
+      placeholder: |
+        A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+    validations:
+      required: true
+  - type: textarea
+    id: what-expected
+    attributes:
+      label: Behavior?
+      description: Describe the solution you'd like.
+      placeholder: |
+        A clear and concise description of what you want to happen.
+  - type: textarea
+    id: what-version
+    attributes:
+      label: Alternatives?
+      description: Describe alternatives you've considered.
+      placeholder: |
+        A clear and concise description of any alternative solutions or features you've considered.
+  - type: textarea
+    id: how-happened
+    attributes:
+      label: Additional context
+      placeholder: |
+        Add any other context or screenshots about the feature request here.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
