@@ -18,10 +18,8 @@
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
       "moby": false,
       "dockerDashComposeVersion": "v2"
-    }
-  },
-  "containerEnv": {
-    "DENO_INSTALL": "/usr/local"
+    },
+    "./local-features/deno": {}
   },
   "remoteEnv": {},
   // Configure tool-specific properties.
@@ -33,7 +31,6 @@
         // JavaScript
         "oven.bun-vscode",
         // TypeScript
-        "denoland.vscode-deno",
         "bierner.lit-html",
         "better-ts-errors.better-ts-errors",
         // Makefile
@@ -52,17 +49,8 @@
       "settings": {
         // Editor
         "editor.guides.bracketPairs": "active",
+        // Debug
         "debug.internalConsoleOptions": "neverOpen",
-        // Better linting & formatting
-        "deno.enable": true,
-        "editor.defaultFormatter": "denoland.vscode-deno",
-        "editor.formatOnPaste": true,
-        "editor.formatOnSave": true,
-        "editor.formatOnSaveMode": "file",
-        "editor.codeActionsOnSave": [
-          "source.organizeImports",
-          "source.fixAll"
-        ],
         // Terminal
         "terminal.integrated.defaultProfile.linux": "zsh",
         // Prettifies the response with emojis and such.
@@ -72,11 +60,10 @@
   },
   // Use 'updateContentCommand' to run commands after the container is successfully created.
   "updateContentCommand": {
-    "install_docsify": "bun install --global docsify-cli",
-    "install_deno": "curl -fsSL https://deno.land/install.sh | sh"
+    "install": "bun install --global docsify-cli"
   },
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": {
-    "restore": "bun run clean && bun install"
+    "restore": "bun install"
   }
 }
