@@ -1,7 +1,8 @@
 {
   "name": "docsify-footer",
-  // See complete list https://hub.docker.com/r/oven/bun
-  "image": "oven/bun",
+  // See complete list https://hub.docker.com/_/microsoft-dotnet-sdk/
+  // Or https://mcr.microsoft.com/v2/dotnet/sdk/tags/list
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [
     // Http
@@ -14,12 +15,15 @@
     "ghcr.io/devcontainers/features/common-utils:2": {
       "configureZshAsDefaultShell": true
     },
+    "ghcr.io/alertbox/oven-sh/bun:1": {
+      "packages": "docsify-cli"
+    },
+    "ghcr.io/alertbox/denoland/deno:1": {},
     "ghcr.io/devcontainers/features/github-cli:1": {},
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
       "moby": false,
       "dockerDashComposeVersion": "v2"
-    },
-    "./local-features/deno": {}
+    }
   },
   "remoteEnv": {},
   // Configure tool-specific properties.
@@ -28,8 +32,6 @@
     "vscode": {
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
-        // JavaScript
-        "oven.bun-vscode",
         // TypeScript
         "bierner.lit-html",
         "better-ts-errors.better-ts-errors",
@@ -59,9 +61,7 @@
     }
   },
   // Use 'updateContentCommand' to run commands after the container is successfully created.
-  "updateContentCommand": {
-    "install": "bun install --global docsify-cli"
-  },
+  "updateContentCommand": {},
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": {
     "restore": "bun install"
